@@ -32,5 +32,9 @@ def download_android():
         os.makedirs(DOWNLOAD_FOLDER, exist_ok=True)
         with open(os.path.join(DOWNLOAD_FOLDER, ANDROID_DOSYA), 'w') as f:
             f.write("Oyun Diyari v1.0 Android Kurulum Dosyasi")
+            
+@app.route('/google63dd5220789c7bff.html')
+def google_verify():
+    return render_template('google63dd5220789c7bff.html')
 
     return send_from_directory(DOWNLOAD_FOLDER, ANDROID_DOSYA, as_attachment=True)
